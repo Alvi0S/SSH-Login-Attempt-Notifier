@@ -20,3 +20,5 @@ tail -fn0 "$LOG_FILE" | while read line ; do
     if echo "$line" | grep -q "sshd"; then
         send_message "SSH Login Attempt:\n$line"
     fi
+
+    ## MADE BY ALVI
